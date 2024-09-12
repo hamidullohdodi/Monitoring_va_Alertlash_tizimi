@@ -26,7 +26,7 @@ func main() {
 	go monitorMemory(cfg)
 	go monitorDiskIO(cfg)
 
-	select {} // Infinite select to keep the program running
+	select {}
 }
 
 func monitorCPU(cfg *config.Config) {
